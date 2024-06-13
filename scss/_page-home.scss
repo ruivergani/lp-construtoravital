@@ -6,9 +6,61 @@
 #s__hero{
   background-color: var(--primary-orange);
   width: 100%;
-  height: calc(100vh - 9.6rem);
+  height: calc(100vh);
   margin-top: -100px;
-  padding-top: 100px;
+  .container{
+    width: 100%;
+    height: 100%;
+    @include flex(column, center, flex-start);
+    padding-top: 300px;
+    .s__hero__logo__enjoy{
+      padding-bottom: 150px;
+    }
+    .s__hero__logos{
+      @include flex(row, center, center);
+      gap: 100px;
+      position: relative;
+      &::after{
+        content: "";
+        top: -10%;
+        left: 48%;
+        width: 4px;
+        height: 120%;
+        background-color: var(--white);
+        position: absolute;
+      }
+    }
+  }
+  // Responsive
+  @media (max-width: 768px){
+    .container{
+      padding-top: 200px;
+      .s__hero__logos{
+        @include flex(column, center, center);
+        gap: 30px;
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 576px){
+    .container{
+      padding-top: 150px;
+      .s__hero__logo__enjoy{
+        width: 100%;
+        max-width: 300px;
+        padding-bottom: 60px;
+      }
+      .s__hero__logos{
+        @include flex(column, center, center);
+        gap: 40px;
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 #s__project{
