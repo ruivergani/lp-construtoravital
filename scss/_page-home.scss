@@ -2,11 +2,15 @@
   width: 100%;
   height: calc(100vh - 9.6rem);
 }
+// Section Hero
 #s__hero{
-  background-color: #653DF5;
+  background-color: var(--primary-orange);
   width: 100%;
   height: calc(100vh - 9.6rem);
+  margin-top: -100px;
+  padding-top: 100px;
 }
+
 #s__project{
   background-color: #8161F4;
 }

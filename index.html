@@ -26,25 +26,39 @@
     <!--=====================================================================-->
     <header class="js-header" id="js-header">
       <div class="container">
-        <nav>
+        <a href="index.html" class="logo" aria-label="logo">
+          <img src="./assets/logos/logo-vitalwhite.png" alt="">
+        </a>
+        <nav aria-label="navigation" class="js-nav">
           <ul>
-            <li><a href="#s__project" class="active js-link">O Projeto</a></li>
-            <li><a href="#s__location" class="js-link">Localização</a></li>
-            <li><a href="#s__planta" class="js-link">Plantas</a></li>
-            <li><a href="#s__perspectiva" class="js-link">Galeria de imagens realização</a></li>
+            <li><a href="#s__project" class="active js-link" aria-label="projeto link">O Projeto</a></li>
+            <li><a href="#s__location" class="js-link" aria-label="localizacao link">Localização</a></li>
+            <li><a href="#s__planta" class="js-link" aria-label="plantas link">Plantas</a></li>
+            <li><a href="#s__perspectiva" class="js-link" aria-label="galeria link">Galeria de imagens realização</a></li>
           </ul>
         </nav>
+        <!--=====================================================================-->
+        <!--=========== BURGUER MENU  ============-->
+        <!--=====================================================================-->
+        <div>
+          <button class="hamburger hamburger--collapse" type="button"
+            id="js-menu-button" aria-label="Menu Button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
       </div>
       <!--=====================================================================-->
       <!--=========== MOBILE MENU  ============-->
       <!--=====================================================================-->
-      <div class="mobile__menu">
+      <div class="mobile__menu js-menu-mobile">
         <nav>
           <ul>
-            <li><a href="">O Projeto</a></li>
-            <li><a href="">Localizacao</a></li>
-            <li><a href="">Plantas</a></li>
-            <li><a href="">Galeria de imagens realizacao</a></li>
+            <li><a href="#s__project" aria-label="projeto link">O Projeto</a></li>
+            <li><a href="#s__location" aria-label="localizacao link">Localização</a></li>
+            <li><a href="#s__planta" aria-label="plantas link">Plantas</a></li>
+            <li><a href="#s__perspectiva" aria-label="galeria link">Galeria de imagens realização</a></li>
           </ul>
         </nav>
       </div>
