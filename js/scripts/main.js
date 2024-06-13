@@ -1,3 +1,12 @@
+// Slides Configuration
+const container = document.getElementById("carouselProjeto");
+const options = {infinite: false, Dots: false};
+new Carousel(container, options);
+Fancybox.bind('[data-fancybox="gallery"]', {
+  l10n : Fancybox.l10n.de
+});
+
+// Header Configuration
 let links = document.querySelectorAll('.js-link');
 let sections = document.querySelectorAll('.section');
 const header = document.getElementById("js-header");
@@ -53,12 +62,3 @@ menuMobileNav.forEach((item) => {
     menuButton.classList.remove('is-active');
   })
 })
-
-var slide_project = new Swiper(".slides__project", {
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false // autoplay nao para de funcionar
-  },
-  effect: 'fade',
-  spaceBetween: 0,
-});

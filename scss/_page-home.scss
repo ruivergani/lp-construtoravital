@@ -105,18 +105,18 @@
   .s__project__right{
     width: 100%;
     max-width: 750px;
-    .slides__project{
-      .swiper-wrapper{
-        .swiper-slide{
+    #carouselProjeto{
+      --f-carousel-slide-height: 100vh;
+      --f-carousel-spacing: 10px;
+      .f-carousel__slide{
+        width: 100%;
+        min-width: 750px;
+        height: calc(100vh - 100px) !important;
+        img{
           width: 100%;
-          min-width: 750px;
+          min-width: 700px;
           height: calc(100vh - 100px) !important;
-          img{
-            width: 100%;
-            min-width: 700px;
-            height: calc(100vh - 100px) !important;
-            object-fit: cover !important;
-          }
+          object-fit: cover !important;
         }
       }
     }
@@ -343,7 +343,7 @@
     }
   }
 }
-
+// Section Information
 #s__info{
   background-color: #9d85f3;
   width: 100%;

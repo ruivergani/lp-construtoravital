@@ -13,9 +13,9 @@
     <link rel="shortcut icon" href="">
     <!-- 3: display font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Fancyapps Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
     <!-- CSS Links -->
     <link rel="stylesheet" href="./css/plugins.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -93,17 +93,15 @@
         </a>
       </div>
       <div class="s__project__right">
-        <!-- Slider main container -->
-        <div class="slides__project">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="./assets/bg/bg-enjoy.png" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/bg/bg-fachadaenjoy.png" alt="">
-            </div>
+        <div class="f-carousel" id="carouselProjeto">
+          <div class="f-carousel__slide" data-fancybox="gallery" data-caption="Enjoy Fachada" data-src="https://lipsum.app/id/60/1600x1200">
+            <img src="https://lipsum.app/id/60/1600x1200" alt="Enjoy Fachada" title="">
+          </div>
+          <div class="f-carousel__slide" data-fancybox="gallery" data-caption="Enjoy Entrada" data-src="https://lipsum.app/id/61/1600x1200">
+            <img src="https://lipsum.app/id/61/1600x1200" alt="Enjoy Entrada" title="">
+          </div>
+          <div class="f-carousel__slide" data-fancybox="gallery" data-caption="Enjoy Piscina" data-src="https://lipsum.app/id/62/1600x1200">
+            <img src="https://lipsum.app/id/62/1600x1200" alt="Enjoy Piscina">
           </div>
         </div>
       </div>
@@ -136,6 +134,7 @@
     <!--=====================================================================-->
     <section class="" id="s__info">
       <div class="container">
+
       </div>
     </section>
 
@@ -189,8 +188,9 @@
   </main>
 
   <!-- === JavaScript === -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script language="javascript" type="text/javascript" src="./js/plugins.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/l10n/de.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
   <script language="javascript" type="text/javascript" src="./js/all.js"></script>
 </body>
 </html>

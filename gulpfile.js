@@ -41,15 +41,6 @@ function gulpJS(){
 }
 gulp.task('allJS', gulpJS);
 
-// Concat all plugins JS
-function pluginsJS(){
-    return gulp
-    .src(['./js/lib/swiper.min.js']) // name of files
-    .pipe(concat('plugins.js')) // all these files will be going into plugins.js
-    .pipe(gulp.dest('js/'))
-    .pipe(browserSync.stream())
-}
-gulp.task('pluginjs', pluginsJS);
 
 // Browser Function
 function browser(){
@@ -67,9 +58,8 @@ function watch(){
     gulp.watch('css/lib/*.css', pluginsCSS);
     gulp.watch('*.html').on('change', browserSync.reload); // refresh html when changes made
     gulp.watch('js/scripts/*.js', gulpJS);
-    gulp.watch('js/lib/*.js', pluginsJS);
 }
 gulp.task('watch', watch);
 
 // Gulp default
-gulp.task('default', gulp.parallel('watch', 'browser-sync', 'sass','plugincss', 'allJS', 'pluginjs'));
+gulp.task('default', gulp.parallel('watch', 'browser-sync', 'sass','plugincss', 'allJS'));
