@@ -144,6 +144,7 @@ header{
     &.changeBackgroundColor{
       z-index: 2023 !important;
       background-color: var(--primary-orange);
+      border: 0.5px solid var(--primary-orange);
     }
   }
 }
