@@ -7,17 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Enjoy | Construtor Vital</title>
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="./css/plugins.css">
-    <link rel="stylesheet" href="./css/main.css">
     <!-- Phosphor Font Link -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- Favicon -->
     <link rel="shortcut icon" href="">
     <!-- 3: display font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Fancyapps Library -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./css/plugins.css">
+    <link rel="stylesheet" href="./css/main.css">
   </head>
 <body>
   <main>
@@ -34,7 +35,7 @@
             <li><a href="#s__project" class="active js-link" aria-label="projeto link">O Projeto</a></li>
             <li><a href="#s__location" class="js-link" aria-label="localizacao link">Localização</a></li>
             <li><a href="#s__planta" class="js-link" aria-label="plantas link">Plantas</a></li>
-            <li><a href="#s__perspectiva" class="js-link" aria-label="galeria link">Galeria de imagens realização</a></li>
+            <li><a href="#s__perspectiva" class="js-link" aria-label="galeria link">Galeria de imagens Realização</a></li>
           </ul>
         </nav>
         <!--=====================================================================-->
@@ -81,8 +82,28 @@
     <!--=========== #2 PROJECT  ============-->
     <!--=====================================================================-->
     <section class="section" id="s__project">
-      <div class="container">
-        <h1>Project</h1>
+      <div class="s__project__left">
+        <span>O projeto</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur autem natus dolore, facilis debitis deleniti perferendis, fuga ut soluta, provident at non excepturi commodi adipisci. Beatae aperiam ea aliquid quis!</p>
+        <a href="" class="btn-quotes">
+          <p>Agendar uma visita</p>
+        </a>
+      </div>
+      <div class="s__project__right">
+        <!-- Slider main container -->
+        <div class="slides__project">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/bg/bg-enjoy.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/bg/bg-fachadaenjoy.png" alt="">
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -159,6 +180,7 @@
   </main>
 
   <!-- === JavaScript === -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script language="javascript" type="text/javascript" src="./js/plugins.js"></script>
   <script language="javascript" type="text/javascript" src="./js/all.js"></script>
 </body>

@@ -12,9 +12,9 @@
     width: 100%;
     height: 100%;
     @include flex(column, center, flex-start);
-    padding-top: 300px;
+    padding-top: 250px;
     .s__hero__logo__enjoy{
-      padding-bottom: 150px;
+      padding-bottom: 120px;
     }
     .s__hero__logos{
       @include flex(row, center, center);
@@ -64,7 +64,28 @@
 }
 
 #s__project{
-  background-color: #8161F4;
+  width: 100%;
+  @include flex(row, flex-start, space-between);
+  .s__project__left{
+    width: 100%;
+    max-width: 600px;
+    span{
+
+    }
+    p{
+
+    }
+    .btn-quotes{
+
+    }
+  }
+  .s__project__right{
+    width: 100%;
+    max-width: 500px;
+    .slides__project{
+
+    }
+  }
 }
 #s__info{
   background-color: #9d85f3;

@@ -53,3 +53,12 @@ menuMobileNav.forEach((item) => {
     menuButton.classList.remove('is-active');
   })
 })
+
+var slide_project = new Swiper(".slides__project", {
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false // autoplay nao para de funcionar
+  },
+  effect: 'fade',
+  spaceBetween: 0,
+});

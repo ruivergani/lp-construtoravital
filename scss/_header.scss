@@ -38,15 +38,15 @@ header{
             &:hover{
               color:var(--white);
               &::after{
-                opacity: .8;
-                bottom: -48%;
+                opacity: 1;
+                bottom: -30%;
               }
             }
             &.active{
               color:var(--white);
               &::after{
-                opacity: .8;
-                bottom: -48%;
+                opacity: 1;
+                bottom: -30%;
               }
             }
           }
@@ -78,6 +78,7 @@ header{
   }
   &.changeBackgroundColor {
     background-color: var(--white);
+    border: 0.5px solid var(--gray-300);
     .container{
       nav{
         ul{
