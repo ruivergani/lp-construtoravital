@@ -606,6 +606,21 @@
       }
     }
   }
+  // Responsive
+  @media (max-width: 991px){
+    .container{
+      #carouselPerspectiva{
+        --f-carousel-slide-width: calc((100%) / 2);
+      }
+    }
+  }
+  @media (max-width: 768px){
+    .container{
+      #carouselPerspectiva{
+        --f-carousel-slide-width: calc((100%) / 1);
+      }
+    }
+  }
 }
 #s__form{
   background-color: #2C2C2C;
