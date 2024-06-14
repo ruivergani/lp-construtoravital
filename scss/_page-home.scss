@@ -636,9 +636,45 @@
   height: calc(100vh - 9.6rem);
 }
 #s__realizacao{
-  background-color: orange;
+
+  background-color: var(--white);
   width: 100%;
   height: calc(100vh - 9.6rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10rem;
+    .left{
+      text-align: justify;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h1{
+        font-size: 5rem;
+      }
+      p{
+        font-size: 1.2rem;
+      }
+    }
+
+    .right{
+      width: 20%;
+      img{
+        width: 200px;
+        height: auto;
+      }
+    }
+  }
+
+
 }
 
 
