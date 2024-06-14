@@ -14,7 +14,7 @@
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 body{
   -webkit-font-smoothing: antialiased;
@@ -44,4 +44,7 @@ button{
 :focus{
   outline: 0;
   box-shadow: 0 0 0 2px var(--primary-green);
+}
+.fancybox__container {
+  z-index: 999999 !important;
 }

@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 2: preconnect font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>Enjoy | Construtor Vital</title>
-  <!-- CSS Links -->
-  <link rel="stylesheet" href="./css/plugins.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- Phosphor Font Link -->
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="">
-  <!-- 3: display font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <!-- Fancyapps Library -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-  <!-- Font Awesome Icons social-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 2: preconnect font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Enjoy | Construtor Vital</title>
+    <!-- Phosphor Font Link -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="">
+    <!-- 3: display font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Fancyapps Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./css/plugins.css">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
 <body>
   <main>
     <!--=====================================================================-->
@@ -32,25 +27,39 @@
     <!--=====================================================================-->
     <header class="js-header" id="js-header">
       <div class="container">
-        <nav>
+        <a href="index.html" class="logo" aria-label="logo">
+          <img src="./assets/logos/logo-vitalwhite.png" alt="">
+        </a>
+        <nav aria-label="navigation" class="js-nav">
           <ul>
-            <li><a href="#s__project" class="active js-link">O Projeto</a></li>
-            <li><a href="#s__location" class="js-link">Localização</a></li>
-            <li><a href="#s__planta" class="js-link">Plantas</a></li>
-            <li><a href="#s__perspectiva" class="js-link">Galeria de imagens realização</a></li>
+            <li><a href="#s__project" class="active js-link" aria-label="projeto link">O Projeto</a></li>
+            <li><a href="#s__location" class="js-link" aria-label="localizacao link">Localização</a></li>
+            <li><a href="#s__planta" class="js-link" aria-label="plantas link">Plantas</a></li>
+            <li><a href="#s__perspectiva" class="js-link" aria-label="galeria link">Galeria de imagens Realização</a></li>
           </ul>
         </nav>
+        <!--=====================================================================-->
+        <!--=========== BURGUER MENU  ============-->
+        <!--=====================================================================-->
+        <div>
+          <button class="hamburger hamburger--collapse" type="button"
+            id="js-menu-button" aria-label="Menu Button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
       </div>
       <!--=====================================================================-->
       <!--=========== MOBILE MENU  ============-->
       <!--=====================================================================-->
-      <div class="mobile__menu">
+      <div class="mobile__menu js-menu-mobile">
         <nav>
           <ul>
-            <li><a href="">O Projeto</a></li>
-            <li><a href="">Localizacao</a></li>
-            <li><a href="">Plantas</a></li>
-            <li><a href="">Galeria de imagens realizacao</a></li>
+            <li><a href="#s__project" aria-label="projeto link">O Projeto</a></li>
+            <li><a href="#s__location" aria-label="localizacao link">Localização</a></li>
+            <li><a href="#s__planta" aria-label="plantas link">Plantas</a></li>
+            <li><a href="#s__perspectiva" aria-label="galeria link">Galeria de imagens realização</a></li>
           </ul>
         </nav>
       </div>
@@ -59,9 +68,13 @@
     <!--=====================================================================-->
     <!--=========== #1 HERO  ============-->
     <!--=====================================================================-->
-    <section class="" id="s__hero">
+    <section id="s__hero">
       <div class="container">
-        <h1>hero</h1>
+        <img src="./assets/logos/logo-enjoyblack.png" alt="Logo Enjoy" class="s__hero__logo__enjoy">
+        <div class="s__hero__logos">
+          <img src="./assets/logos/logo-caixa.png" alt="Logo Caixa">
+          <img src="./assets/logos/logo-mcmv.png" alt="Logo MCMV">
+        </div>
       </div>
     </section>
 
@@ -69,8 +82,28 @@
     <!--=========== #2 PROJECT  ============-->
     <!--=====================================================================-->
     <section class="section" id="s__project">
-      <div class="container">
-        <h1>Project</h1>
+      <div class="s__project__left">
+        <span>O projeto</span>
+        <img src="./assets/logos/logo-enjoywhite.png" alt="Logo white enjoy" title="Logo white enjoy">
+        <p>Acreditamos que cada amanhecer merece um sorriso, que cada passo dado em casa deve ser leve, e que uma jornada de transformar um lugar em lar e digno de celebração. No Enjoy, cada detalhe e uma expressão do nosso compromisso com sua felicidade.<br> <br> <strong>Gostar não é suficiente, queremos que você ame onde mora.</strong>
+        </p>
+        <a href="" class="btn-quotes">
+          <p>Agendar uma visita</p>
+          <i class="ph-bold ph-arrow-right"></i>
+        </a>
+      </div>
+      <div class="s__project__right">
+        <div class="f-carousel" id="carouselProjeto">
+          <div class="f-carousel__slide" data-fancybox="gallery" data-caption="Enjoy Fachada" data-src="https://lipsum.app/id/60/1600x1200">
+            <img src="https://lipsum.app/id/60/1600x1200" alt="Enjoy Fachada" title="">
+          </div>
+          <div class="f-carousel__slide" data-fancybox="gallery" data-caption="Enjoy Entrada" data-src="https://lipsum.app/id/61/1600x1200">
+            <img src="https://lipsum.app/id/61/1600x1200" alt="Enjoy Entrada" title="">
+          </div>
+          <div class="f-carousel__slide" data-fancybox="gallery" data-caption="Enjoy Piscina" data-src="https://lipsum.app/id/62/1600x1200">
+            <img src="https://lipsum.app/id/62/1600x1200" alt="Enjoy Piscina">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -79,7 +112,20 @@
     <!--=====================================================================-->
     <section class="section" id="s__location">
       <div class="container">
-        <h1>Location</h1>
+        <div class="s__location__title">
+          <div class="s__location__span">
+            <span>Localização</span>
+          </div>
+          <h3>Aproveite cada momento</h3>
+          <p>A localização do empreendimento ENJOY e privilegiada. Ao lado dos bairros de mais prestígio da cidade garante boa vizinhança e é sinônimo de boa valorização.</p>
+          <a href="" class="btn-quotes">
+            <p>Olhe no Google Maps</p>
+            <i class="ph-bold ph-arrow-right"></i>
+          </a>
+        </div>
+        <div class="s__location__video">
+          <iframe width="660" height="371" src="https://www.youtube.com/embed/w-f7G3Uk_xU?si=W9LoQC4RJq8awdtK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
 
@@ -88,7 +134,101 @@
     <!--=====================================================================-->
     <section class="" id="s__info">
       <div class="container">
-        <h1>Info</h1>
+        <div class="s__info__slide">
+          <div class="f-carousel" id="carouselInformation">
+            <div class="f-carousel__slide" data-fancybox="galleryInfo" data-caption="Enjoy Fachada" data-src="https://lipsum.app/id/60/1600x1200">
+              <img src="https://lipsum.app/id/60/1600x1200" alt="Enjoy Fachada" title="">
+            </div>
+            <div class="f-carousel__slide" data-fancybox="galleryInfo" data-caption="Enjoy Entrada" data-src="https://lipsum.app/id/61/1600x1200">
+              <img src="https://lipsum.app/id/61/1600x1200" alt="Enjoy Entrada" title="">
+            </div>
+            <div class="f-carousel__slide" data-fancybox="galleryInfo" data-caption="Enjoy Piscina" data-src="https://lipsum.app/id/62/1600x1200">
+              <img src="https://lipsum.app/id/62/1600x1200" alt="Enjoy Piscina">
+            </div>
+          </div>
+        </div>
+        <div class="s__info__title">
+          <img src="./assets/logos/logo-enjoywhite.png" alt="" class="s__info__logo">
+          <ul class="s__info__title__list">
+            <li>
+              <div class="icon">
+                <i class="ph ph-blueprint"></i>
+              </div>
+              <div>
+                <span>
+                  Numero de andares
+                </span>
+                <p>10 andares</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="ph ph-building-office"></i>
+              </div>
+              <div>
+                <span>
+                  Numero de andares
+                </span>
+                <p>10 andares</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <i class="ph ph-car"></i>
+              </div>
+              <div>
+                <span>
+                  Numero de andares
+                </span>
+                <p>10 andares</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./assets/icons/icon-andares.png" alt="">
+              </div>
+              <div>
+                <span>
+                  Numero de andares
+                </span>
+                <p>10 andares</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./assets/icons/icon-andares.png" alt="">
+              </div>
+              <div>
+                <span>
+                  Numero de andares
+                </span>
+                <p>10 andares</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./assets/icons/icon-andares.png" alt="">
+              </div>
+              <div>
+                <span>
+                  Numero de andares
+                </span>
+                <p>10 andares</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="./assets/icons/icon-andares.png" alt="">
+              </div>
+              <div>
+                <span>
+                  Numero de andares
+                </span>
+                <p>10 andares</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -97,7 +237,26 @@
     <!--=====================================================================-->
     <section class="section" id="s__planta">
       <div class="container">
-        <h1>Planta</h1>
+        <div class="s__planta__slide">
+          <div class="f-carousel" id="carouselPlanta">
+            <div class="f-carousel__slide" data-fancybox="galleryPlanta" data-caption="Enjoy Planta" data-src="./assets/bg/bg-plantas.png">
+              <img src="./assets/bg/bg-plantas.png" alt="Enjoy Planta" title="">
+              <div class="slide__text">
+                <h3>Modelo Planta <br> Tipo A</h3>
+                <p>proposta de layout</p>
+                <span>Finais 01 | 02 | 03 | 04 | 05 | 06</span>
+              </div>
+            </div>
+            <div class="f-carousel__slide" data-fancybox="galleryPlanta" data-caption="Enjoy Planta" data-src="./assets/bg/bg-plantas.png">
+              <img src="./assets/bg/bg-plantas.png" alt="Enjoy Planta" title="">
+              <div class="slide__text">
+                <h3>Modelo Planta</h3>
+                <p>proposta de layout</p>
+                <span>Finais 01 | 02 | 03 | 04 | 05 | 06</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -106,7 +265,34 @@
     <!--=====================================================================-->
     <section class="section" id="s__perspectiva">
       <div class="container">
-        <h1>perspectiva</h1>
+        <div class="s__perspectiva__slide">
+          <div class="f-carousel" id="carouselPerspectiva">
+            <div class="f-carousel__slide" data-fancybox="galleryPerspectiva" data-caption="Enjoy Apartamento 01" data-src="./assets/bg/bg-fachadaenjoy.png">
+              <img src="./assets/bg/bg-fachadaenjoy.png" alt="Enjoy Apartamento 01" title="">
+              <div class="slide__info">
+                <p>Apartamento 01</p>
+              </div>
+            </div>
+            <div class="f-carousel__slide" data-fancybox="galleryPerspectiva" data-caption="Enjoy Apartamento 01" data-src="./assets/bg/bg-fachadaenjoy.png">
+              <img src="./assets/bg/bg-fachadaenjoy.png" alt="Enjoy Apartamento 01" title="">
+              <div class="slide__info">
+                <p>Apartamento 01</p>
+              </div>
+            </div>
+            <div class="f-carousel__slide" data-fancybox="galleryPerspectiva" data-caption="Enjoy Apartamento 01" data-src="./assets/bg/bg-fachadaenjoy.png">
+              <img src="./assets/bg/bg-fachadaenjoy.png" alt="Enjoy Apartamento 01" title="">
+              <div class="slide__info">
+                <p>Apartamento 01</p>
+              </div>
+            </div>
+            <div class="f-carousel__slide" data-fancybox="galleryPerspectiva" data-caption="Enjoy Apartamento 01" data-src="./assets/bg/bg-fachadaenjoy.png">
+              <img src="./assets/bg/bg-fachadaenjoy.png" alt="Enjoy Apartamento 01" title="">
+              <div class="slide__info">
+                <p>Apartamento 01</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -115,7 +301,7 @@
     <!--=====================================================================-->
     <section class="" id="s__form">
       <div class="container">
-        <h1>form</h1>
+        
       </div>
     </section>
 
@@ -124,7 +310,6 @@
     <!--=====================================================================-->
     <section class="" id="s__diferenciais">
       <div class="container">
-        <h1>diferencias</h1>
       </div>
     </section>
 
@@ -133,84 +318,37 @@
     <!--=====================================================================-->
     <section class="" id="s__realizacao">
       <div class="container">
-        <h1>realizacao</h1>
       </div>
     </section>
 
     <!--=====================================================================-->
     <!--=========== FOOTER  ============-->
     <!--=====================================================================-->
-   <!--  <footer id="s__footer">
-      <div class="container">
-
-        <div class="s_1">
-          <img src="./assets/logos/logo-vitalwhite.png" alt="Logo">
-          <div class="contato">
-            <p>(35) 3716 2950 - WhatsApp</p>
-            <p>contato@construtoravital.com</p>
-            <p>www.construtoravital.com</p>
-          </div>
-        </div>
-
-        <div class="s_2">
-
-          <img src="./assets/logos/logo-enjoywhite.png" alt="Logo">
-          <div class="contato">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem eget metus tristique tempor. Nunc
-              at justo rutrum, vehicula neque nec, auctor elit. Fusce diam ligula, aliquet sed consequat et, interdum
-              feugiat ante. Cras cursus risus eu diam finibus, vitae malesuada magna facilisis. Nam varius mollis ex ut
-              feugiat. Etiam facilisis urna sapien, vulputate aliquam nisl aliquet quis. Pellentesque at imperdiet nunc.
-              Praesent pretium tempus purus, ut varius nisi ultricies semper. Aliquam gravida lacus et dui suscipit
-              congue.
-
-              Donec molestie magna in arcu convallis bibendum. Duis eu lorem vel magna faucibus feugiat. Vestibulum ante
-              ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer varius, urna eget faucibus
-              lacinia, elit elit efficitur felis, quis auctor tellus lectus at ante. Aenean in odio finibus, tincidunt
-              nulla eget, tincidunt est. Pellentesque sit amet erat fermentum, accumsan sapien nec, tincidunt tellus.
-              Maecenas eu neque sed erat dapibus euismod at vitae tortor. Integer vel feugiat lectus. Vestibulum et
-              iaculis tellus.
-
-
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-    </footer> -->
-
     <footer id="s__footer">
       <div class="container">
         <div class="left">
           <img src="./assets/logos/logo-vitalwhite.png" alt="Qualidade">
         </div>  
-
         <div class="center">
           <h1>Endereço</h1>
-
           <ul>
             <li><a>Rua Capitão Afonso Junqueira, 290 - Centro</a></li>
             <li><a>Poços de Caldas - Minas Gerais</a></li>
             <li><a>CEP: 37701-042</a></li>
           </ul>
-
           <ul>
             <li><a>Razão Social – VITAL Incorporadora e Administradora Ltda.</a></li>
             <li><a>CNPJ – 14.965.449/0001-07</a></li>
           </ul>
         </div>
-
         <div class="right">
           <h1>Fale Conosco</h1>
-
           <ul>
             <li><a>(35) 3716-2950</a></li>
             <li><a>(35) 9 9167-3502</a></li>
             <li><a>contato@construtoravital.com</a></li>
           </ul>
-         
+        
           <div class="icons">
             <a href="https://www.facebook.com/seu_perfil" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.youtube.com/seu_canal" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -219,12 +357,13 @@
           </div>
         </div>
       </div>
-
     </footer>
   </main>
 
   <!-- === JavaScript === -->
-  <script language="javascript" type="text/javascript" src="./js/plugins.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/l10n/de.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
   <script language="javascript" type="text/javascript" src="./js/all.js"></script>
 </body>
 

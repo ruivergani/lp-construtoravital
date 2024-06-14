@@ -1,0 +1,43 @@
+.btn-quotes{
+  position: relative;
+  transition: all .4s ease;
+  text-align: center;
+  @include flex(row, center, center);
+  gap: 10px;
+  border-radius: 3px;
+  background: var(--primary-orange);
+  padding: 15px 50px;
+  p, i{
+    color: var(--white);
+  }
+  p{
+    font-weight: 600 !important;
+    font-size: 1.6rem !important;
+    line-height: 16px;
+    transition: all .4s ease;
+    display: block;
+    text-transform: uppercase;
+  }
+  i{
+    position: absolute;
+    font-size: 18px !important;
+    top: 17px;
+    right: 30px;
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+  &:hover{
+    p{
+      transform: translateX(-8px);
+    }
+    i{
+      opacity: 1;
+    }
+  }
+  // Responsive
+  @media (max-width: 576px){
+    i{
+      top: 16px;
+    }
+  }
+}
