@@ -1,10 +1,18 @@
 // Slides Configuration
 const container = document.getElementById("carouselProjeto");
 const containerInfo = document.getElementById("carouselInformation");
+const containerPlanta = document.getElementById("carouselPlanta");
 const options = {infinite: false, Dots: false};
 new Carousel(containerInfo, options);
+new Carousel(containerPlanta, options);
 new Carousel(container, options);
 Fancybox.bind('[data-fancybox="gallery"]', {
+  l10n : Fancybox.l10n.de
+});
+Fancybox.bind('[data-fancybox="galleryInfo"]', {
+  l10n : Fancybox.l10n.de
+});
+Fancybox.bind('[data-fancybox="galleryPlanta"]', {
   l10n : Fancybox.l10n.de
 });
 

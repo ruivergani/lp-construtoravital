@@ -487,18 +487,61 @@
 
 }
 #s__planta{
-  background-color: #263140;
+  background-color: #ECECD4;
+  padding: 60px 0px;
+  @include flex(row, center, center);
+  .container{
+    @include flex(row, center, center);
+    .s__planta__slide{
+      @include flex(row, center, center);
+      #carouselPlanta{
+        .f-carousel__slide{
+          width: 100%;
+          @include flex(column, center, center);
+          img{
+            width: 100%;
+            max-width: 700px;
+          }
+          .slide__text{
+            width: 100%;
+            margin-left: 100px;
+            margin-top: -150px;
+            h3{
+              font-size: 3.6rem;
+              margin-bottom: 10px;
+            }
+            p{
+              font-size: 20px;
+              margin-bottom: 5px;
+            }
+            span{
+              font-size: 20px;
+              font-weight: 600;
+            }
+          }
+        }
+        .f-carousel__nav{
+          @include flex(row, center, space-between);
+          .f-button{
+            background-color: white;
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
 }
 #s__perspectiva{
   background-color: #2E3B4D;
 }
 #s__form{
-  background-color: green;
+  background-color: #2C2C2C;
   width: 100%;
   height: calc(100vh - 9.6rem);
 }
 #s__diferenciais{
-  background-color: yellow;
+  background-color: var(--primary-orange);
   width: 100%;
   height: calc(100vh - 9.6rem);
 }
