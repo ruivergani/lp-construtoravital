@@ -496,6 +496,7 @@
     .s__planta__slide{
       @include flex(row, center, center);
       #carouselPlanta{
+        --f-carousel-slide-height: 700px;
         .f-carousel__slide{
           width: 100%;
           @include flex(column, center, center);
@@ -571,10 +572,40 @@
       }
     }
   }
-
 }
 #s__perspectiva{
-  background-color: #2E3B4D;
+  background-color: var(--primary-brown);
+  @include flex(row, center, center);
+  .container{
+    #carouselPerspectiva{
+      --f-carousel-spacing: 20px;
+      --f-carousel-slide-width: calc((100%) / 3);
+      .f-carousel__slide{
+        @include flex(column, center, center);
+        .slide__info{
+          background-color: var(--white);
+          padding: 15px 30px;
+          width: 100%;
+          p{
+            font-size: 20px;
+            font-weight: 700;
+            @include flex(column, center, center);
+          }
+        }
+      }
+      .f-carousel__nav{
+        @include flex(row, center, space-between);
+        .f-button{
+          background-color: white;
+          width: 60px;
+          height: 60px;
+        }
+      }
+      .f-carousel__dots{
+        bottom: -70px;
+      }
+    }
+  }
 }
 #s__form{
   background-color: #2C2C2C;

@@ -2,18 +2,40 @@
 const container = document.getElementById("carouselProjeto");
 const containerInfo = document.getElementById("carouselInformation");
 const containerPlanta = document.getElementById("carouselPlanta");
-const options = {infinite: false, Dots: false};
+const containerPerspectiva = document.getElementById("carouselPerspectiva");
+const options = { infinite: false, Dots: false };
+const options2 = {infinite: false, Dots: true};
 new Carousel(containerInfo, options);
 new Carousel(containerPlanta, options);
+new Carousel(containerPerspectiva, options2);
 new Carousel(container, options);
 Fancybox.bind('[data-fancybox="gallery"]', {
-  l10n : Fancybox.l10n.de
+  l10n: Fancybox.l10n.de,
+  hideScrollbar: false,
+  Slideshow: {
+    playOnStart: true,
+  },
 });
 Fancybox.bind('[data-fancybox="galleryInfo"]', {
-  l10n : Fancybox.l10n.de
+  l10n: Fancybox.l10n.de,
+  hideScrollbar: false,
+  Slideshow: {
+    playOnStart: true,
+  },
 });
 Fancybox.bind('[data-fancybox="galleryPlanta"]', {
-  l10n : Fancybox.l10n.de
+  l10n: Fancybox.l10n.de,
+  hideScrollbar: false,
+  Slideshow: {
+    playOnStart: true,
+  },
+});
+Fancybox.bind('[data-fancybox="galleryPerspectiva"]', {
+  l10n: Fancybox.l10n.de,
+  hideScrollbar: false,
+  Slideshow: {
+    playOnStart: true,
+  },
 });
 
 // Header Configuration
