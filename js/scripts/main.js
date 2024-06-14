@@ -1,6 +1,8 @@
 // Slides Configuration
 const container = document.getElementById("carouselProjeto");
+const containerInfo = document.getElementById("carouselInformation");
 const options = {infinite: false, Dots: false};
+new Carousel(containerInfo, options);
 new Carousel(container, options);
 Fancybox.bind('[data-fancybox="gallery"]', {
   l10n : Fancybox.l10n.de
