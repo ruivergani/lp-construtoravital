@@ -5,9 +5,9 @@ footer {
     .container {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 5rem;
+        padding: 5rem 0;
         .left,
         .center,
         .right {
