@@ -113,11 +113,18 @@
         width: 100%;
         min-width: 750px;
         height: calc(100vh - 100px) !important;
+        overflow: hidden;
         img{
           width: 100%;
           min-width: 700px;
           height: calc(100vh - 100px) !important;
           object-fit: cover !important;
+          transition: all .3s;
+        }
+        &:hover{
+          img{
+            transform: scale(1.03)
+          }
         }
       }
       .f-carousel__nav{
@@ -324,11 +331,21 @@
           width: 100%;
           min-width: 600px;
           height: 550px !important;
+          overflow: hidden;
+          transition: all .3s;
           img{
             width: 100%;
             min-width: 600px;
             height: 550px !important;
             object-fit: cover !important;
+            transition: all .3s;
+            overflow: hidden;
+            border-radius: 4px;
+          }
+          &:hover{
+            img{
+              transform: scale(1.03);
+            }
           }
         }
       }
@@ -487,6 +504,7 @@
   }
 
 }
+// Section Planta
 #s__planta{
   background-color: #ECECD4;
   padding: 60px 0px;
@@ -573,6 +591,7 @@
     }
   }
 }
+// Section Perspectiva
 #s__perspectiva{
   background-color: var(--primary-brown);
   @include flex(row, center, center);
@@ -582,14 +601,37 @@
       --f-carousel-slide-width: calc((100%) / 3);
       .f-carousel__slide{
         @include flex(column, center, center);
+        border-radius: 5px;
+        .slide__image{
+          overflow: hidden;
+          height: 100%;
+          max-height: 364px;
+          img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            max-height: 364px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            transition: all .3s;
+            overflow: hidden;
+          }
+        }
         .slide__info{
           background-color: var(--white);
           padding: 15px 30px;
           width: 100%;
+          border-bottom-right-radius: 5px;
+          border-bottom-left-radius: 5px;
           p{
             font-size: 20px;
             font-weight: 700;
             @include flex(column, center, center);
+          }
+        }
+        &:hover{
+          img{
+            transform: scale(1.03);
           }
         }
       }
