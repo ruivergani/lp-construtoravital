@@ -2,6 +2,7 @@
 
 footer {
     background-color: var(--black-light);
+    height: calc(60vh - 9.6rem);
     .container {
         width: 100%;
         display: flex;
@@ -11,7 +12,7 @@ footer {
         .left,
         .center,
         .right {
-            width: 300px;
+            width: 320px;
             height: 200px;
             h1 {
                 font-size: 20px;
@@ -29,7 +30,7 @@ footer {
                     list-style: none;
                     gap: 30px;
                     a {
-                        font-size: 1.2rem;
+                        font-size: 1.6rem;
                         color: var(--white);
                         text-decoration: none;
                     }
@@ -49,14 +50,13 @@ footer {
         .right {
             .icons {
                 width: 100%;
+                height: 20px;
                 justify-content: center;
                 display: flex;
                 gap: 20px;
-                a {
+                i{
+                    font-size: 20rem;
                     color: var(--white);
-                    i {
-                        font-size: 2rem;
-                    }
                 }
             }
         }
