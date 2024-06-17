@@ -41,4 +41,29 @@ footer {
             }
         }
     }
+    // Responsive
+    @media (max-width: 1100px){
+        .container{
+            .s__footer__nav{
+                max-width: 600px;
+            }
+        }
+    }
+    @media (max-width: 850px){
+        .container{
+            @include flex(column, center, center);
+            gap: 30px;
+            .s__footer__nav{
+                @include flex(column, center, center);
+                text-align: center;
+                gap: 30px;
+                .s__footer__nav__center{
+                    ul{
+                        @include flex(column, center, center);
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }

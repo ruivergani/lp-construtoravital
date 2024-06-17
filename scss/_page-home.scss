@@ -106,7 +106,7 @@
   }
   .s__project__right{
     width: 100%;
-    max-width: 750px;
+    max-width: 50%;
     #carouselProjeto{
       --f-carousel-slide-height: 100vh;
       .f-carousel__slide{
@@ -794,7 +794,6 @@
   height: calc(100vh - 9.6rem);
 }
 #s__realizacao{
-  background-color: orange;
   width: 100%;
   height: calc(100vh - 9.6rem);
 }
