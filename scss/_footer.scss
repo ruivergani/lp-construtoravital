@@ -2,6 +2,7 @@
 
 footer {
     background-color: var(--black-light);
+<<<<<<< HEAD
     height: calc(60vh - 9.6rem);
     .container {
         width: 100%;
@@ -33,20 +34,55 @@ footer {
                         font-size: 1.6rem;
                         color: var(--white);
                         text-decoration: none;
+=======
+    padding: 60px 0px;
+    .container {
+        width: 100%;
+        @include flex(row, flex-start, space-between);
+        .s__footer__nav{
+            width: 100%;
+            max-width: 800px;
+            @include flex(row, flex-start, space-between);
+            gap: 50px;
+            .s__footer__nav__center{
+                h3{
+                    font-size: 20px;
+                    color: var(--white);
+                    font-family: 'Roboto', sans-serif;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                }
+                ul{
+                    @include flex(column, flex-start, flex-start);
+                    gap: 15px;
+                    li{
+                        font-size: 16px;
+                        color: var(--gray-200);
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 500;
+                        a{
+                            font-size: 16px;
+                            color: var(--gray-200);
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 500;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+>>>>>>> d13805cdf4108fe7e952473d04cd92c1d8b4c1bc
                     }
                 }
             }
         }
-        .left {
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-                width: 150px;
-                height: auto;
+    }
+    // Responsive
+    @media (max-width: 1100px){
+        .container{
+            .s__footer__nav{
+                max-width: 600px;
             }
         }
+<<<<<<< HEAD
         .right {
             .icons {
                 width: 100%;
@@ -57,6 +93,22 @@ footer {
                 i{
                     font-size: 20rem;
                     color: var(--white);
+=======
+    }
+    @media (max-width: 850px){
+        .container{
+            @include flex(column, center, center);
+            gap: 30px;
+            .s__footer__nav{
+                @include flex(column, center, center);
+                text-align: center;
+                gap: 30px;
+                .s__footer__nav__center{
+                    ul{
+                        @include flex(column, center, center);
+                        text-align: center;
+                    }
+>>>>>>> d13805cdf4108fe7e952473d04cd92c1d8b4c1bc
                 }
             }
         }
