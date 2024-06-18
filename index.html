@@ -334,46 +334,108 @@
     <!--=====================================================================-->
     <section class="" id="s__form">
       <div class="container">
-        <div class="s__form__title">
-          <h3>Fale agora mesmo conosco</h3>
-          <p>Nao perca essa oportunidade</p>
-        </div>
-        <div class="s__form__bottom">
-          <form id="" action="" method="post">
-            <div class="form-group">
-              <label for="contactMethod">Forma de Contato:</label><br>
-              <select name="contactMethod" id="contactMethod" required>
-                <option value="" disabled selected>Selecione uma opção</option>
-                <option value="email">Email</option>
-                <option value="phone">Telefone</option>
-                <option value="whatsapp">WhatsApp</option>
-                <option value="sms">SMS</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="firstName">Nome:</label><br>
-              <input type="text" name="firstName" id="firstName" placeholder="Nome" required>
-            </div>
-            <div class="form-group">
-              <label for="email">E-mail:</label><br>
-              <input type="text" name="email" id="email" placeholder="E-mail" required>
-            </div>
-            <div class="form-group">
-              <label for="phone">Telefone: <span>(Opcional)</span></label><br>
-              <input type="number" name="phone" id="phone">
-            </div>
-            <div class="form-group">
-              <label for="mensagem">Mensagem:</label><br>
-              <textarea name="mensagem" id="mensagem" rows="2" cols="50"></textarea>
-            </div>
-            <!-- === END OF HIDDEN INPUT === -->
-            <button class="button-modal-form" type="submit">
-              <span>ENVIAR</span>
-            </button>
-          </form>
-        </div>
+          <div class="s__form__title">
+              <h3>Fale agora mesmo conosco</h3>
+              <p>Não perca essa oportunidade</p>
+          </div>
+          <div class="s__form__bottom">
+              <form id="" action="./php/enviar_email.php" method="post">
+                <form id="" action="http://localhost:8000/php/enviar_email.php" method="post">
+
+                  <div class="form-group">
+                      <label for="contactMethod">Forma de Contato:</label><br>
+                      <select name="contactMethod" id="contactMethod" required>
+                          <option value="" disabled selected>Selecione uma opção</option>
+                          <option value="email">Email</option>
+                          <option value="phone">Telefone</option>
+                          <option value="whatsapp">WhatsApp</option>
+                          <option value="sms">SMS</option>
+                      </select>
+                  </div>
+                  <div class="form-group">
+                      <label for="firstName">Nome:</label><br>
+                      <input type="text" name="firstName" id="firstName" placeholder="Nome" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">E-mail:</label><br>
+                      <input type="email" name="email" id="email" placeholder="E-mail" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="phone">Telefone: <span>(Opcional)</span></label><br>
+                      <input type="tel" name="phone" id="phone">
+                  </div>
+                  <div class="form-group">
+                      <label for="mensagem">Mensagem:</label><br>
+                      <textarea name="mensagem" id="mensagem" rows="2" cols="50" required></textarea>
+                  </div>
+                  <button class="button-modal-form" type="submit">
+                      <span>ENVIAR</span>
+                  </button>
+              </form>
+          </div>
       </div>
-    </section>
+  </section>
+  
+  
+
+
+
+
+<!--
+            <form action="https://formsubmit.co/pedro.eng98@gmail.com" method="POST">
+              <div class="form-group">
+                  <label for="contactMethod">Forma de Contato:</label><br>
+                  <select name="contactMethod" id="contactMethod" required>
+                      <option value="" disabled selected>Selecione uma opção</option>
+                      <option value="email">Email</option>
+                      <option value="phone">Telefone</option>
+                      <option value="whatsapp">WhatsApp</option>
+                      <option value="sms">SMS</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="firstName">Nome:</label><br>
+                  <input type="text" name="firstName" id="firstName" placeholder="Nome" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">E-mail:</label><br>
+                  <input type="email" name="email" id="email" placeholder="E-mail" required>
+              </div>
+              <div class="form-group">
+                  <label for="phone">Telefone: <span>(Opcional)</span></label><br>
+                  <input type="tel" name="phone" id="phone">
+              </div>
+              <div class="form-group">
+                  <label for="mensagem">Mensagem:</label><br>
+                  <textarea name="mensagem" id="mensagem" rows="2" cols="50" required></textarea>
+              </div>
+              <button class="button-modal-form" type="submit">
+                <input type="hidden" name="_template" value="table">
+                  <span>ENVIAR</span>
+              </button>
+          </form>
+
+        -->
+
+    <!--        <form action="https://formsubmit.co/pedro.eng98@gmail.com" method="POST">
+              <input type="text" name="name" placeholder="Digite seu nome" required>
+              <input type="email" name="email" placeholder="Digite seu e-mail" required>
+          
+              <textarea cols="30" rows="10" name="message" 
+                placeholder="Digite sua mensagem" required></textarea>
+              
+              <button type="submit">ENVIAR</button>
+              
+              <input type="hidden" name="_subject" value="Novo Contato!">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_template" value="table">
+            </form>
+
+            -->
+
+          </div>
+      </div>
+  </section>
 
     <!--=====================================================================-->
     <!--=========== #8 DIFERENCIAIS  ============-->
@@ -456,22 +518,25 @@
     <!--=====================================================================-->
     <footer id="s__footer">
       <div class="container">
+
         <div class="left">
           <img src="./assets/logos/logo-vitalwhite.png" alt="Qualidade">
         </div>
+
         <div class="center">
           <h1>Endereço</h1>
           <ul>
             <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Capitão+Afonso+Junqueira+290,+Centro,+Poços+de+Caldas,+Minas+Gerais,+CEP+37701-042" target="_blank" title="Clique aqui para visualizar no mapa">Rua Capitão Afonso Junqueira, 290 - Centro</a></li>      
             <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Capitão+Afonso+Junqueira+290,+Centro,+Poços+de+Caldas,+Minas+Gerais,+CEP+37701-042" target="_blank" title="Clique aqui para visualizar no mapa">Poços de Caldas - Minas Gerais</a></li>
             <li><a href="https://www.google.com/maps/search/?api=1&query=Rua+Capitão+Afonso+Junqueira+290,+Centro,+Poços+de+Caldas,+Minas+Gerais,+CEP+37701-042" target="_blank" title="Clique aqui para visualizar no mapa">CEP: 37701-042</a></li>
-        </ul>
+          </ul>
         
           <ul>
-            <li>Razão Social – VITAL Incorporadora e Administradora Ltda.</li>
-            <li>CNPJ – 14.965.449/0001-07</li>
+            <li><a>VITAL Incorporadora e Administradora Ltda.</a></li>
+            <li><a>CNPJ – 14.965.449/0001-07</a></li>
           </ul>
         </div>
+
         <div class="right">
           <h1>Fale Conosco</h1>
           <ul>
@@ -479,28 +544,7 @@
               <li><a href="tel:+553591673502">(35) 9 9167-3502</a></li>
               <li><a href="mailto:contato@construtoravital.com">contato@construtoravital.com</a></li>
           </ul>
-<<<<<<< HEAD
-      
-          <!-- Ícones das redes sociais -->
-          <div class="social-icons">
-              <a href="https://www.facebook.com/sua_pagina" target="_blank" class="social-icon">
-                  <i class="fab fa-facebook"></i>
-              </a>
-              <a href="https://twitter.com/sua_conta" target="_blank" class="social-icon">
-                  <i class="fab fa-twitter"></i>
-              </a>
-              <a href="https://www.instagram.com/seu_perfil" target="_blank" class="social-icon">
-                  <i class="fab fa-instagram"></i>
-              </a>
-=======
-          <div class="icons">
-            <a href="https://www.facebook.com/seu_perfil" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/seu_canal" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/seu_perfil" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/seu_numero_de_telefone" target="_blank"><i class="fab fa-whatsapp"></i></a>
->>>>>>> 72da0e5f99534d0bfced5ce5d6e1efbf7638c4af
-          </div>
-      </div>
+        </div>
       
        
         </div>
