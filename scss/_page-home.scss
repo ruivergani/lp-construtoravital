@@ -819,11 +819,15 @@
         font-size: 20px;
       }
       p {
+<<<<<<< HEAD
+        font-size: 1.6rem;
+=======
         font-size: 18px;
       }
       .depoimentos {
         color: cadetblue;
         font-weight: 500;
+>>>>>>> d13805cdf4108fe7e952473d04cd92c1d8b4c1bc
       }
     }
     .s__location__video {
@@ -872,7 +876,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/bg/bg-fachadaenjoy.png');
+  background-image: url('../assets/bg/bg_fachada.png');
   background-size: cover;
   background-position: center;
   opacity: 0.2;
@@ -911,6 +915,16 @@
         width: 200px;
         height: auto;
       }
+<<<<<<< HEAD
+
+
+      .s__location__video {
+        width: 1060px;
+        height: 371px;
+  
+        iframe {
+          border-radius: 20px;
+=======
     }
   }
   // Responsive
@@ -936,6 +950,7 @@
       .left{
         h1{
           font-size: 26px;
+>>>>>>> d13805cdf4108fe7e952473d04cd92c1d8b4c1bc
         }
       }
     }
